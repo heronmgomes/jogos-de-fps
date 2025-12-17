@@ -1,8 +1,9 @@
+/* Seus imports e estilos iniciais permanecem iguais */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap');
 
 body {
     font-family: 'Chakra Petch', sans-serif;
-    background-image: url("img/fundo.jpg"); /* Certifique-se que o caminho está correto */
+    background-image: url("img/fundo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,13 +48,15 @@ button {
     margin-top: 1rem;
     width: 90%;
     max-width: 600px;
+    transition: opacity 0.3s ease;
 }
 
+/* Estilo combinado do seu .item-resultado */
 .item-resultado {
-    background: rgba(0, 0, 0, 0.75);
-    padding: 1.2rem;
-    border-radius: 15px;
-    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor do seu primeiro bloco */
+    border-radius: 1rem; /* Mantido do primeiro bloco */
+    padding: 1rem;
+    margin: 1rem 0;
     box-shadow: 0 6px 12px rgba(0,0,0,0.4);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -64,25 +67,26 @@ button {
 }
 
 .item-resultado h2 {
-    margin-top: 0;
-    color: #00ffd5;
+    margin: 0 0 0.5rem 0; /* Mantido do primeiro bloco */
+    color: #F5F7F8; /* Cor do primeiro bloco */
 }
 
 .item-resultado p {
     line-height: 1.4;
+    color: #ffffff;
 }
 
 .item-resultado a {
-    color: #00ffd5;
+    color: #1abc9c; /* Cor do primeiro bloco */
     text-decoration: none;
+}
+
+.item-resultado a:hover {
+    text-decoration: underline;
 }
 
 footer {
     margin-top: 2rem;
     font-size: 0.9rem;
     text-align: center;
-}
-
-.resultados-pesquisa {
-    transition: opacity 0.3s ease;
 }
