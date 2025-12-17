@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Chakra Petch', sans-serif;
-    background-image: url("img/fundo.jpg");
+    background-image: url("img/fundo.jpg"); /* Certifique-se que o caminho está correto */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,24 +50,6 @@ button {
 }
 
 .item-resultado {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 1rem;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-}
-
-.item-resultado a {
-    color: #00ffd5;
-    text-decoration: none;
-}
-
-footer {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.item-resultado {
     background: rgba(0, 0, 0, 0.75);
     padding: 1.2rem;
     border-radius: 15px;
@@ -88,6 +70,17 @@ footer {
 
 .item-resultado p {
     line-height: 1.4;
+}
+
+.item-resultado a {
+    color: #00ffd5;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 .resultados-pesquisa {
