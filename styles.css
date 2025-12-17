@@ -87,3 +87,7 @@ footer {
     line-height: 1.4;
 }
 
+.resultados-pesquisa {
+    transition: opacity 0.3s ease;
+}
+
