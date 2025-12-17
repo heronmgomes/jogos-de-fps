@@ -17,6 +17,12 @@ body {
     color: #ffffff;
 }
 
+/* Main container */
+main {
+    width: 100%;
+    max-width: 900px; /* Largura máxima do conteúdo */
+}
+
 /* Título principal */
 h1 {
     letter-spacing: 0.2rem;
