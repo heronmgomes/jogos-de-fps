@@ -1,9 +1,10 @@
-/* Seus imports e estilos iniciais permanecem iguais */
+/* Import da fonte */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap');
 
+/* Estilo geral do body */
 body {
     font-family: 'Chakra Petch', sans-serif;
-    background-image: url("img/fundo.jpg");
+    background-image: url("img/fundo.jpg"); /* Certifique-se que o caminho está correto */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,17 +17,20 @@ body {
     color: #ffffff;
 }
 
+/* Título principal */
 h1 {
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
 }
 
+/* Seções */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Input de pesquisa */
 input {
     width: 280px;
     padding: 0.8rem;
@@ -35,6 +39,7 @@ input {
     margin-bottom: 0.5rem;
 }
 
+/* Botão */
 button {
     padding: 0.6rem 1.2rem;
     border-radius: 20px;
@@ -44,17 +49,20 @@ button {
     font-weight: bold;
 }
 
+/* Container de resultados */
 .resultados-pesquisa {
     margin-top: 1rem;
     width: 90%;
     max-width: 600px;
+    max-height: 50vh; /* Limita altura a metade da tela */
+    overflow-y: auto; /* Scroll vertical automático */
     transition: opacity 0.3s ease;
 }
 
-/* Estilo combinado do seu .item-resultado */
+/* Itens individuais de resultado */
 .item-resultado {
-    background-color: rgba(0, 0, 0, 0.6); /* Cor do seu primeiro bloco */
-    border-radius: 1rem; /* Mantido do primeiro bloco */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    border-radius: 1rem;
     padding: 1rem;
     margin: 1rem 0;
     box-shadow: 0 6px 12px rgba(0,0,0,0.4);
@@ -66,18 +74,21 @@ button {
     box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 }
 
+/* Título dentro do item de resultado */
 .item-resultado h2 {
-    margin: 0 0 0.5rem 0; /* Mantido do primeiro bloco */
-    color: #F5F7F8; /* Cor do primeiro bloco */
+    margin: 0 0 0.5rem 0;
+    color: #F5F7F8;
 }
 
+/* Parágrafo dentro do item de resultado */
 .item-resultado p {
     line-height: 1.4;
     color: #ffffff;
 }
 
+/* Links dentro do item de resultado */
 .item-resultado a {
-    color: #1abc9c; /* Cor do primeiro bloco */
+    color: #1abc9c;
     text-decoration: none;
 }
 
@@ -85,6 +96,7 @@ button {
     text-decoration: underline;
 }
 
+/* Rodapé */
 footer {
     margin-top: 2rem;
     font-size: 0.9rem;
